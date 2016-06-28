@@ -4,6 +4,6 @@ before_install:
 script:    
   - ./build.sh
   cache:
-  directories:
-    - .dotnet
+directories:
+ - .dotnet
  
