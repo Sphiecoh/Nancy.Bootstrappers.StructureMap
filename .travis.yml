@@ -3,7 +3,7 @@ before_install:
  - chmod +x build.sh
 script:    
   - ./build.sh
-  cache:
-directories:
- - .dotnet
+cache:
+ directories:
+  - .dotnet
  
