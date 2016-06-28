@@ -1,9 +1,13 @@
 language: csharp
-before_install:
- - chmod +x build.sh
-script:    
-  - ./build.sh
-cache:
- directories:
-  - .dotnet
+sudo: required
+dist: trusty
+addons:
+  apt:
+    packages: 
+    - gettext
+    - libcurl4-openssl-dev
+    - libicu-dev
+    - libssl-dev
+    - libunwind8
+script: ./build.sh --verbosity diagnostic
  
